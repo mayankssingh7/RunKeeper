@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise tracker</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="href="https://fonts.googleapis.com/css?family=Roboto" type="text/css">
+
+</head>
+<body>
+    <div class="Container">
+        <h1>Exercise Tracker</h1>
+        <form action="/api/exercise/new-user" method="post">
+            <h3>Create a New User</h3>
+            <p><code>POST /api/exercise/new-user</code></p>
+            <input id="uname" type="text" name="username" placeholder="Username">
+            <input type="submit" value="Submit">
+        </form>
+        <!-- <h4>Or.....</h4> -->
+        <form action="/api/exercise/add" method="post">
+            <h3>Add Exercise</h3>
+            <p><code>POST /api/exercise/add</code></p>
+            <input type="text" id="uid" name="Username" placeholder="Username*">
+            <input type="text" id="desc" name="description" placeholder="Description*">
+            <input type="text" id="dur" name="duration" placeholder="Duartion* (mins)">
+            <input type="text" id="dat" name="date" placeholder="date [yyyy-mm-dd]">
+            <input type="submit" value="Submit">
+        </form>
+        <p>&copy; Ayush</p>
+    </div>
+</body>
+</html>
